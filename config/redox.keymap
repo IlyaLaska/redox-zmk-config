@@ -13,7 +13,7 @@
 
 &lt {
     global-quick-tap;
-    quick-tap-ms = <100>;
+    quick-tap-ms = <170>;
 };
 
 &mt {
