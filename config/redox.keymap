@@ -30,17 +30,33 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GT>;
         };
+
         full_arrow_fn: full_arrow_fn {
             compatible = "zmk,behavior-macro";
             label = "FULL_ARROW_FN";
             #binding-cells = <0>;
             bindings = <&kp C &kp O &kp N &kp S &kp T &kp SPACE &kp F &kp N &kp SPACE &kp EQUAL &kp SPACE &kp LPAR &kp RPAR &kp SPACE &kp EQUAL &kp GT &kp SPACE &kp LEFT_BRACE &kp RBRC>;
         };
+
         const_wrd: const_wrd {
             compatible = "zmk,behavior-macro";
             label = "CONST_WRD";
             #binding-cells = <0>;
             bindings = <&kp C &kp O &kp N &kp S &kp T &kp SPACE>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        bootloader_r {
+            bindings = <&bootloader>;
+            key-positions = <11 69>;
+        };
+
+        bootloader_l {
+            bindings = <&bootloader>;
+            key-positions = <0 56>;
         };
     };
 
